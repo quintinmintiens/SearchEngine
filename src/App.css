@@ -1,0 +1,29 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlightCategory{
+    position: absolute;
+    display: flex;
+    border-radius: 10px;
+    height: 35px;
+    width: 112px !important;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+  }
+  .categoriesContainer{
+    display: flex;
+    align-items: center;
+    background-color: #D2D2D2;
+    border-radius: 15px;
+    height: 45px;
+    flex-direction: row;
+    padding-left:8px;
+    padding-right: 8px;
+  }
+  .CategoryItem {
+    text-align:center;
+    width:110px
+  }
