@@ -10,6 +10,7 @@ function App() {
       <h1 className='text-5xl text-white font-bold mb-[25px]'>Search engine</h1>
       <TypeBtns/>
       <Searchbar/>
+      <sqlGrid/>
       
     </div>
   );
