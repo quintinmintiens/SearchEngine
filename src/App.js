@@ -2,15 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 import Searchbar from './components/searchbar';
 import TypeBtns from './components/TypeBtns';
-import sqlGrid from './components/sqlGrid';
+import SqlGrid from './components/sqlGrid';
+import { useEffect } from 'react';
+
 
 function App() {
+
   return (
-    <div className="flex flex-col justify-center items-center w-full h-screen">
-      <h1 className='text-5xl text-white font-bold mb-[25px]'>Search engine</h1>
+    // center this div in middle of screen
+
+
+    <div className="flex flex-col justify-center items-center w-full h-full">
+      <h1 className='pt-50 mt-20 text-5xl text-white font-bold mb-[25px]'>Search engine</h1>
       <TypeBtns/>
       <Searchbar/>
-      <sqlGrid/>
+      <SqlGrid/>
       
     </div>
   );
