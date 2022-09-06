@@ -31,6 +31,7 @@ export default function SqlGrid() {
             })
             .catch((error) => {
                 setError(error);
+                
                 setLoading(false);
             });
         }
@@ -39,9 +40,12 @@ export default function SqlGrid() {
     [searchKey]);
     return (
         <div>
-            {loading && <div>Loading...</div>}
-            {error && <div>Error: {error.message}</div>}
+            {loading && <div></div>}
+            {error && <div className="text-red-700 mt-10">Error: {"We have no records for this search"}</div>}
             {visibility && (
+                // make table scrollable
+                
+
                 <table className="table-auto bg-white mt-10 mx-auto rounded-lg">
                     <thead>
                         <tr>
@@ -70,6 +74,7 @@ export default function SqlGrid() {
                         ))}
                     </tbody>
                 </table>
+                
                 
             )}
         </div>
